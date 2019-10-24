@@ -1,0 +1,3 @@
+#embed("Molecules/frame_top")
+#(page.content)
+#embed("Molecules/frame_bottom")
