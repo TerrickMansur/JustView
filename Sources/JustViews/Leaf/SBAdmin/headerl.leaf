@@ -1,3 +1,0 @@
-<div class="text-#(header.alignment)">
-    <h1 class="#(header.classValue)" text-gray-900 mb-4">#(header.value)</h1>
-</div>

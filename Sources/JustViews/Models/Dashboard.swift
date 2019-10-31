@@ -1,26 +1,26 @@
+////
+////  Dashboard.swift
+////  App
+////
+////  Created by Terrick Mansur on 8/16/19.
+////
 //
-//  Dashboard.swift
-//  App
+//import Foundation
 //
-//  Created by Terrick Mansur on 8/16/19.
+//struct Dashboard: Codable {
+//    let frame: Frame
+//    let heading: String = "Dashboard"
+//    let description: String = ""
+//    let content = "CONTENT"
 //
-
-import Foundation
-
-struct Dashboard: Codable {
-    let frame: Frame
-    let heading: String = "Dashboard"
-    let description: String = ""
-    let content = "CONTENT"
-    
-    init(user: User) {
-        self.frame = Molucules.frame(user: user)
-    }
-}
-
-extension Views {
-    
-    static func dashboard(user: User) -> Dashboard {
-        return Dashboard(user: user)
-    }
-}
+//    init(user: User) {
+//        self.frame = Molucules.frame(user: user)
+//    }
+//}
+//
+//extension Views {
+//
+//    static func dashboard(user: User) -> Dashboard {
+//        return Dashboard(user: user)
+//    }
+//}
