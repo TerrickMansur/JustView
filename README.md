@@ -1,6 +1,6 @@
 # JustViews
 
-JustViews is a Swift package intended to be used with Vapor that contains pure models that represent supported HTML templates listed below.
+JustViews is a Swift package intended to be used with [Vapor](https://vapor.codes/) that contains pure models that represent supported HTML templates listed below.
 
 - https://github.com/TerrickMansur/JustViewsRes-SBAdmin
 
@@ -16,4 +16,4 @@ Select what HTML template you would like to use for your website. Currently ther
 
 https://github.com/TerrickMansur/JustViewsRes-SBAdmin
 
-Clone this repository directly in your Vapors project `/Resources/View` folder.
+Clone this repository directly in your Vapors project `/Resources/Views` folder. This should give you a folder structure that look like this `Resources/View/JustViewsRes-SB-Admin`. This folder will include all the [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) 
