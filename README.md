@@ -30,3 +30,25 @@ World.shared.vendorFilesLocation = "http://someurl.com/files"
 ```
 
 ## Usage
+
+If you look at the HTML SB-Admin templates git [here](https://github.com/TerrickMansur/JustViewsRes-SBAdmin) you will see that there are all [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) files. What JustViews provides is the models you need to initialize to be able to render these leaf files. 
+
+How to render the page with no content. 
+
+```Swift
+import Vapor
+import Leaf
+
+final class IndexController {
+    func index(_ req: Request) throws -> Future<View> {
+        return try req.view().render("home")
+    }
+}
+```
+
+Note home is not provided, this is a leaf file that you will need to create that has to look like this.
+
+```Leaf
+
+```
+
