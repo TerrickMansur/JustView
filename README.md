@@ -26,3 +26,5 @@ You can change this through the `World` singleton in the project like so.
 ```Swift
 World.shared.vendorFilesLocation = "http://someurl.com/files"
 ```
+
+## Usage
