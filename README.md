@@ -41,12 +41,15 @@ import Leaf
 
 final class IndexController {
     func index(_ req: Request) throws -> Future<View> {
-        return try req.view().render("home")
+        let home = Home()
+        return try req.view().render("home", home)
     }
 }
 ```
 
-Note home is not provided, this is a leaf file that you will need to create that has to look like this.
+Note that the `home` [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) is not provided, this is a [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file that you will need to create. Think of these files as pages on your site. 
+
+For the example above, we will create the `home` page.
 
 ```Leaf
 
