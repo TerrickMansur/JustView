@@ -31,7 +31,7 @@ World.shared.vendorFilesLocation = "http://someurl.com/files"
 
 ## Usage
 
-If you look at the HTML SB-Admin templates git [here](https://github.com/TerrickMansur/JustViewsRes-SBAdmin) you will see that there are all [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) files. What JustViews provides is the models you need to initialize to be able to render these leaf files. 
+If you look at the HTML JustViewsRes-SBAdmin git [here](https://github.com/TerrickMansur/JustViewsRes-SBAdmin) you will see that it simple contain [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) files. What JustViews provides is the models you need to initialize to be able to render these leaf files. 
 
 How to render the page with no content. 
 
@@ -41,17 +41,30 @@ import Leaf
 
 final class IndexController {
     func index(_ req: Request) throws -> Future<View> {
-        let home = Home()
+ 
+        let frame = JustViews.SBAdmin.Frame(
+            contentTitle: "Dashboard", copyrightText: "Copyright © Your Website 2019")
+
+        let dashboard = Dashboard(frame: frame)
         return try req.view().render("home", home)
     }
 }
 ```
 
-Note that the `home` [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) is not provided, this is a [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file that you will need to create. Think of these files as pages on your site. 
+Note that there is no `dashboard` [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file provided, this is a [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file that you will need to create. Think of these files as pages on your site. 
 
-For the example above, we will create the `home` page.
+For the example above, creates the `Dashboard` page. Every page con container however many `JustView` model as you want. In this case, this is the `Dashboard` page that consist of a frame. The model would look like this. 
 
-```Leaf
-
+```Swift
+struct Dashboard: Codable {
+    let frame: JustViews.SBAdmin.Frame
+}
 ```
+
+Note that the model always needs to implement Codable. 
+
+Once initialized, you can render the page like shows on the last line of code.
+
+
+
 
