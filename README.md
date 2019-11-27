@@ -42,8 +42,10 @@ import Leaf
 final class IndexController {
     func index(_ req: Request) throws -> Future<View> {
  
+        let head = JustViews.SBAdmin.Head(title: "title", publicResources: "")
+
         let frame = JustViews.SBAdmin.Frame(
-            contentTitle: "Dashboard", copyrightText: "Copyright © Your Website 2019")
+            head: head, contentTitle: "Dashboard", copyrightText: "Copyright © Your Website 2019")
 
         let dashboard = Dashboard(frame: frame)
         return try req.view().render("home", home)
@@ -53,7 +55,7 @@ final class IndexController {
 
 Note that there is no `dashboard` [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file provided, this is a [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file that you will need to create. Think of these files as pages on your site. 
 
-For the example above, creates the `Dashboard` page. Every page con container however many `JustView` model as you want. In this case, this is the `Dashboard` page that consist of a frame. The model would look like this. 
+The example above, creates the `Dashboard` page. Every page can container however many `JustView` model as you want. In this case, the page `Dashboard` consists of a frame. The model would look like this. 
 
 ```Swift
 struct Dashboard: Codable {
