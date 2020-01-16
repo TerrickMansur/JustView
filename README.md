@@ -31,7 +31,7 @@ World.shared.vendorFilesLocation = "http://someurl.com/files"
 
 ## Usage
 
-If you look at the HTML JustViewsRes-SBAdmin git [here](https://github.com/TerrickMansur/JustViewsRes-SBAdmin) you will see that it simple contain [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) files. What JustViews provides is the models you need to initialize to be able to render these leaf files. 
+If you look at the HTML JustViewsRes-SBAdmin git [here](https://github.com/TerrickMansur/JustViewsRes-SBAdmin) you will see that it simply contains [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) files. What JustViews provides is the models you need to initialize to be able to render these leaf files. 
 
 How to render the page with no content. 
 
@@ -55,7 +55,7 @@ final class IndexController {
 
 Note that there is no `dashboard` [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file provided, this is a [Leaf](https://docs.vapor.codes/3.0/leaf/getting-started/) file that you will need to create. Think of these files as pages on your site. 
 
-The example above, creates the `Dashboard` page. Every page can container however many `JustView` model as you want. In this case, the page `Dashboard` consists of a frame. The model would look like this. 
+The example above, creates the `Dashboard` page. Every page can contain however many `JustView` model as you want. In this case, the page `Dashboard` consists of a frame. The model would look like this. 
 
 ```Swift
 struct Dashboard: Codable {
