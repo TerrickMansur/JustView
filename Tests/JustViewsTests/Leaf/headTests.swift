@@ -30,11 +30,11 @@ final class headTests: XCTestCase {
             on: worker)
         
         let b = LeafRenderer(config: tagConfig, using: container)
-        
+        b.render
         let look = b.render("footer", userInfo: [:])
 
         let v = look.flatMap(to: Response.self) { view in
-            return view.
+            return view
         }
 
         XCTAssert( "1" == "")

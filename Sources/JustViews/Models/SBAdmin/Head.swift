@@ -7,6 +7,14 @@
 
 import Foundation
 
-struct Head {
-    let title: String
+extension JustViews.SBAdmin {
+    public struct Head: Codable {
+        let title: String
+        let publicFilesLocation: String
+        
+        public init(title: String, publicFilesLocation: String) {
+            self.title = title
+            self.publicFilesLocation = publicFilesLocation
+        }
+    }
 }

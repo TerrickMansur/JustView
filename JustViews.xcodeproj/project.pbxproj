@@ -350,6 +350,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB209A4C238A70050095541C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "JustViews::JustViewsTests";
+			remoteInfo = JustViewsTests;
+		};
 		CB38C7132368D50700BE97FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -1053,7 +1060,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB38C778236B664400BE97FD /* Leaf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Leaf; sourceTree = "<group>"; };
+		CB44F5EC237C7F120095F701 /* SBAdmin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SBAdmin; path = ../SBAdmin; sourceTree = "<group>"; };
 		"Core::Async::Product" /* Async.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Async.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Core::Bits::Product" /* Bits.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Core::COperatingSystem::Product" /* COperatingSystem.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = COperatingSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2206,7 +2213,7 @@
 			path = Renderer;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -2216,7 +2223,6 @@
 				OBJ_300 /* Products */,
 				OBJ_319 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_51 /* Service */ = {
@@ -2305,7 +2311,6 @@
 		OBJ_8 /* JustViews */ = {
 			isa = PBXGroup;
 			children = (
-				CB38C778236B664400BE97FD /* Leaf */,
 				OBJ_9 /* Models */,
 			);
 			name = JustViews;
@@ -2347,6 +2352,7 @@
 		OBJ_9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CB44F5EC237C7F120095F701 /* SBAdmin */,
 				OBJ_10 /* Atoms.swift */,
 				OBJ_11 /* CategoriesView.swift */,
 				OBJ_12 /* Common */,
@@ -2899,7 +2905,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_300 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3463,7 +3469,7 @@
 		OBJ_543 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "JustViews::JustViewsTests" /* JustViewsTests */;
-			targetProxy = "JustViews::JustViewsTests" /* JustViewsTests */;
+			targetProxy = CB209A4C238A70050095541C /* PBXContainerItemProxy */;
 		};
 		OBJ_573 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
