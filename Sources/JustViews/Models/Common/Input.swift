@@ -12,3 +12,8 @@ struct Input {
     let type: String
     let placeholder: String
 }
+
+/*
+ <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name">
+ 
+ */

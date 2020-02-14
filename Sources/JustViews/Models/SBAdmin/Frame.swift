@@ -15,7 +15,7 @@ extension JustViews.SBAdmin {
         let contentTitle: String
         let copyrightText: String
 
-        public init(head: Head, sideMenu: SideMenu, tableIds: [String], contentTitle: String, copyrightText: String) {
+        public init(head: Head, sideMenu: SideMenu, tableIds: [String] = [], contentTitle: String, copyrightText: String) {
             self.head = head
             self.sideMenu = sideMenu
             self.tableIds = tableIds
