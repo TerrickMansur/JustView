@@ -4,7 +4,7 @@ JustViews is a Swift package intended to be used with [Vapor](https://vapor.code
 
 - https://github.com/TerrickMansur/JustViewsRes-SBAdmin
 
-Please show the creator some love <3 (https://startbootstrap.com/themes/sb-admin-2/)
+Please show the creators some love <3 (https://startbootstrap.com/themes/sb-admin-2/)
 
 ## Installation
 
