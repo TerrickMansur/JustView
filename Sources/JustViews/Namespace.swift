@@ -7,7 +7,5 @@
 
 import Foundation
 public enum JustViews {
-    public enum SBAdmin {
-        
-    }
+    public enum SBAdmin { }
 }

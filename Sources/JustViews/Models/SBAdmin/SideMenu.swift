@@ -15,7 +15,7 @@ extension JustViews.SBAdmin {
             case divider(withBottomSpacing: Bool)
             case header(header: String)
             case link(fasIcon: String, link: Link)
-            case collapseSubmenu(fasIcon: String, title: String, subMenuHeader: String, subMenus: [Links])
+            case collapseSubmenu(fasIcon: String, title: String, subMenus: [Links])
             func toData() -> Data {
                 switch self {
                 case .divider(let withBottomSpacing):
@@ -30,12 +30,12 @@ extension JustViews.SBAdmin {
                         thirdaryData: link.url,
                         forthdaryData: link.alt,
                         fithdaryData: link.active ? " active" : "")
-                case .collapseSubmenu(let fasIcon, let title, let subMenuHeader, let links):
+                case .collapseSubmenu(let fasIcon, let title, let links):
                     return Data(
                         caseValue: 3,
                         primaryData: fasIcon,
                         secondaryData: title,
-                        thirdaryData: subMenuHeader,
+                        thirdaryData: "",
                         linksData: links)
                 }
             }

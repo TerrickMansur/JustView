@@ -29,11 +29,11 @@ extension JustViews.SBAdmin {
 
     public struct Table: Codable {
 
-        let id: String
-        let name: String
-        let columns: [String]
-        let rows: [Row]
-        let actions: [IconedLink]
+        public let id: String
+        public let name: String
+        public let columns: [String]
+        public let rows: [Row]
+        public let actions: [IconedLink]
 
         // MARK: Component
         public var type: String = "table"
